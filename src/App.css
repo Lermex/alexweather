@@ -1,28 +1,120 @@
-.App {
+.app {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.user-forms {
+  background-color: #B3BFBA;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 40px;
+  padding: 3px;
+  margin: 10px 0 5px 0;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.user-forms-input {
+  margin: 0 5px;
+}
+
+.cities-weather-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cities-container {
+  width: 300px;
+  background: #FFEFEF;
+}
+
+.city-button {
+  background-color: #A2C0C0;
+  height: 65px;
+  width: 300px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  margin: 2px;
   color: white;
+  position: relative;
+ }
+
+.city-button:hover .icon-trash-bin {
+  visibility: visible;
 }
 
-.App-title {
-  font-size: 1.5em;
+.icon-trash-bin {
+  width: 24px;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  visibility: hidden;
 }
 
-.App-intro {
-  font-size: large;
+.city-label {
+  font-weight: bold;
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.city-label-weather {
+ font-size: 15px;
+}
+
+.city-label-error {
+  color: #cc0000;
+}
+
+.weather-display-window,
+.weather-display-window-clear,
+.weather-display-window-rain {
+  height: 470px;
+  width: 500px;
+  padding: 5px;
+  color: black;  
+}
+
+.weather-display-window {
+  background-color: #FFFF4E; 
+}
+
+.weather-display-error {
+  background-color: #cc0000; 
+}
+
+.weather-display-window-rain {
+  background-color: #6984AD; 
+}
+
+.weather-display-window-clear {
+  background-color: #FFFF4E; 
+}
+
+.city-form {
+  background-color: #B3BFBA;
+  height: 40px;
+  width: 300px;
+  padding: 3px;
+  margin: 10px auto 5px 25px;
+}
+
+.weather-icon {
+  height: 100px;
+}
+
+.no-city-selected-sign {
+  transform: rotate(90deg);
+  font-size: 80px;
+  display: inline-block;
+}
+
+.add-city-button {
+  background: #ee99ee;
+  border-radius: 10px;
+  padding: 6px 15px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
 }
